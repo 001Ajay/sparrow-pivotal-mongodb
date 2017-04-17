@@ -1,0 +1,27 @@
+---
+spring:
+  data:
+    mongodb:
+      database: PersonDB
+      host: localhost
+      port: 27017
+      repositories:
+        enabled: true
+  profiles:
+    active:
+    - development
+    - mongodb
+
+---
+spring:
+  data:
+    mongodb:
+      database: PersonDB
+      host: localhost
+      port: 27017
+      repositories:
+        enabled: true
+  profiles:
+     active:
+      - cloud 
+      - mongodb
