@@ -1,5 +1,5 @@
 applications:
 - name: fdc-spring-mongodb
-  memory: 512M
-  instances: 1
+  services: 
+  - mongodb-server 
   path: build/libs/sparrow-rest-mongo-db-0.0.1-SNAPSHOT.jar
